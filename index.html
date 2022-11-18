@@ -17,14 +17,19 @@
             <div class="container">  
 
                 <div class="alarm">
-                    <div class="icon">
-                        <img src="assets/img/alarm-clock.png" alt="alarm-clock" class="image">
+                    <div class="display">
+                        <div class="icon">
+                            <img src="assets/img/alarm-clock.png" alt="alarm-clock" class="image">
+                        </div>
+                        <div class="time"></div>
                     </div>
-                    <div class="time"></div>
-                    <div class="input">
-                        <input type="text" name="one" class="input">
+
+                    <div class="alarm-set">
+                        <div class="setbtn">
+                            <input type="text" name="one" class="input" placeholder="12:00">
+                            <button id="set" class="set">Set Alarm</button>
+                        </div>
                     </div>
-                    <button id="set" class="set">Set Alarm</button>
                 </div>
             </div>
         </main>
