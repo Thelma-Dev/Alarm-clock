@@ -119,3 +119,17 @@ button:hover {
     font-size: 90px;
     font-weight: 400;
 }
+
+.output {
+    border: 1px solid #fff;
+    height: 50px;
+    width: 200px;
+}
+
+.output p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #f2f4f6;
+    line-height: 52px;
+    cursor: default;
+}
