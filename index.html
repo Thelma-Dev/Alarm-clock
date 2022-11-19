@@ -6,6 +6,7 @@
         <meta name="author" content="Thelma Osifo">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" >
         <title>Alarm</title>
         <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
@@ -24,14 +25,18 @@
                         <div class="time"></div>
                     </div>
 
-                    <div class="alarm-set">
-                        <div class="setbtn">
-                            <input type="text" name="one" class="input" placeholder="12:00">
-                            <button id="set" class="set">Set Alarm</button>
-                        </div>
-                    </div>
                     <div class="output">
                         <p></p>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div class="alarm-set">
+                        <div class="setbtn">
+                            <form>
+                                <input type="text" name="one" class="input" placeholder="08:30">
+                                <button type="submit" class="set">Set Alarm</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
