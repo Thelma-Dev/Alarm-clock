@@ -5,7 +5,7 @@
     --app-green:#34a65f;
     --app-light-bg: #f0f4f6;
     --app-blue:#0b24c2;
-    --app-blue-hover:#364ee6;
+    --app-blue-hover:#061daf;
 }
 
 body {
@@ -25,6 +25,8 @@ main {
     place-items: center;
 }
 
+
+/* Styling alarm */
 .alarm {
     width: 400px;
     height: 500px;
@@ -44,6 +46,7 @@ main {
     margin-top: 10px;
 }
 
+/* Time display */
 .time {
     margin-top: 15px;
     width: 100%;
@@ -59,6 +62,33 @@ main {
 
 .display {
     height: 300px;
+}
+
+.output {
+    border: 1px solid #fff;
+    height: 50px;
+    width: 200px;
+    margin-inline: auto;
+    padding: auto;
+    background-color: rgba(136, 135, 135, 0.8);
+}
+
+.fa-solid {
+   position: absolute;
+   top: 64.5%;
+   right: 52%;
+    font-size: 18px;
+    color: var(--app-dark-bg);
+    display: none;
+}
+
+.output p {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--app-dark-bg);
+    line-height: 52px;
+    cursor: default;
+    text-align: center;
 }
 
 .alarm-set {
@@ -87,7 +117,7 @@ input[type="text"] {
 }
   
 input:focus {
-    border: 1px solid rgba(255, 255, 255, .9);
+    border: 1px solid rgba(78, 78, 78, .9);
 }
 
 ::placeholder {
@@ -114,35 +144,3 @@ button:hover {
     background-color: var(--app-blue-hover);
 }
 
-.output {
-    border: 1px solid #fff;
-    height: 50px;
-    width: 200px;
-    margin-inline: auto;
-    padding: auto;
-    background-color: rgba(136, 135, 135, 0.8);
-}
-
-.fa-solid {
-   position: absolute;
-   top: 64.5%;
-   right: 52%;
-    font-size: 18px;
-    color: var(--app-dark-bg);
-    visibility: hidden;
-    opacity: 0;
-}
-
-.is-visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.output p {
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--app-dark-bg);
-    line-height: 52px;
-    cursor: default;
-    text-align: center;
-}

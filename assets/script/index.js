@@ -5,19 +5,18 @@ function onEvent(event, selector, callback) {
     return selector.addEventListener(event, callback);
 }
 
-function getElement(selector, parent = document) {
-    return parent.getElementById(selector);
-}
-
-
 function select(selector, parent = document) {
     return parent.querySelector(selector);
 }
 
+
+// Selections
 const btn = select('.set');
 const output = select('.output p');
 const timeRegex = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
-const bell = select('.fa-bell');
+const bell = select('.fa-solid');
+const form = select('form');
+
 
 // Function to validate input
 function isValid(input) {
@@ -41,11 +40,11 @@ function validateInput() {
         valid = false;
     } else {
         output.innerText = time;
-        bell.classList = 'is-visible';
+        bell.style.display = 'block';
     }
 }
 
-// Selections
+// To display current time
 const time = select('.time');
 
 function displayTime() {
@@ -72,7 +71,7 @@ function displayTime() {
 setInterval(displayTime, 1000);
 
 
-// To get set time display
+// To get set time to display in output
 const submit = (event) => {
     event.preventDefault();
 }
@@ -90,9 +89,11 @@ function audioStop(){
         alarmTone.pause();
     }, 2000);
 }
-
-// Alarm ringtone 
+ 
 onEvent('click', btn, function() {
     validateInput();
 });
 
+window.addEventListener('load', () => {
+    form.reset();
+});
